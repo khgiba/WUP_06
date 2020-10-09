@@ -43,6 +43,8 @@ barchartGC(~BIGBANG + POSTLIFE,data=GSS)
 barchartGC(~BIGBANG + POSTLIFE,data=GSS, type="percent")
 
 ```
+  
+The bar chart shows that people do believe in POSTLIFE.  
 
 ### Numerical Descriptive Results
 
@@ -53,7 +55,7 @@ table1 <- xtabs(~BIGBANG + POSTLIFE,data=GSS)
 rowPerc(table1)
 colPerc(table1)
 ```
-
+The Table1 shows that the BIGBANG doesn't believe in POSTLIFE.  
 
 ## Inferential Results
 
@@ -64,7 +66,7 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
-
+chisq.test show of the p-value, and guides us on if we will accept or reject the Null Hypothesis.     
 
 # Discussion and Conclusion
 
