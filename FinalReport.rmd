@@ -70,4 +70,6 @@ chisq.test show of the p-value, and guides us on if we will accept or reject the
 
 # Discussion and Conclusion
 
+We reject the null hypothesis, the chisq.test is inconclusive and there is not enought evadence to support the relationship belief in the BIGBANG theory and belief in the afterlife POSTLIFE.
+
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
