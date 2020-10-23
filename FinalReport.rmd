@@ -60,7 +60,7 @@ table1 <- xtabs(~BIGBANG + POSTLIFE,data=GSS)
 rowPerc(table1)
 colPerc(table1)
 ```
-The Table1 shows that the BIGBANG doesn't believe in POSTLIFE.  
+The Table1 shows that those who do not believe in the BigBang  is 8.33%and that 91.67 % do not believe in Postlife, where 18.29 who believe in the BigBang theory, 81.71 do believe in the Postlife theory. Where as 34.78% do not believe in Postlife theory or the BigBang theory. And 56.77 believe in the Postlife theory. and lastly 43.23% believe in Postlife and 65.22% believe in the BigBang theory.   
 
 ## Inferential Results
 
