@@ -16,11 +16,13 @@ GSS <-read.csv(file="GSScsv.csv",header=TRUE)
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?.  If you skimp in this section expect to be marked down in your grade. Paint a picture of the project a couple of paragraphs is expected!-->
 
-H$_0$: Null hypothesis is that there is a relationship belief in the BIGBANG theory and belief in the afterlife POSTLIFE.    
-
-$H_A$: Alternative hypothesis is that there is a relationship belief in the BIGBANG theory and belief in the afterlife POSTLIFE.  
-
 Is belief in the bigbang theory (BIGBANG) independent of belief in an afterlife (POSTLIFE)?
+
+H$_0$: Null hypothesis is that there is no relationship between the belief in the BIGBANG theory and belief in the afterlife POSTLIFE.      
+
+$H_A$: Alternative hypothesis is that there is an relationship between the belief in the BIGBANG theory and belief in the afterlife POSTLIFE.  
+
+
 
 # Methods
 
@@ -44,12 +46,15 @@ barchartGC(~BIGBANG + POSTLIFE,data=GSS, type="percent")
 
 ```
   
-The bar chart shows that people do believe in POSTLIFE.  
+The bar chart above shows that  around 10% dont believe in the BigBang theory  also, don't believe in the Postlife, Where as around 89% don't believe in the BigBang theory that about 91% do believe in Postlife, 20% that do believe in the BigBang theory. It also shows that 80 to 81% do believe in the Big Bang aand 18-20% don't believe in Postlife. About 80% believe in the BigBang theory and Postlife.   
+
 
 ### Numerical Descriptive Results
 
 
-<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->  
+
+
 ```{r}
 table1 <- xtabs(~BIGBANG + POSTLIFE,data=GSS)
 rowPerc(table1)
@@ -66,10 +71,10 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
-chisq.test show of the p-value, and guides us on if we will accept or reject the Null Hypothesis.     
+Fisher's Exact Test show us the p-value of 0.07143, which is above the allotted 0.05. Therefore we failed to reject the null hypothesis because its possible that there is a relationship between the belief in the BigBang theroy verse Postlife.       
 
 # Discussion and Conclusion
 
-We reject the null hypothesis, The p-value = 0.08006 which is greater than 0.5, The fisher's Exact test states that the ratio is not equal to 1, There for there is not enough information collected to come up with a true conclusion.  
+We failed to reject the null hypothesis. The p-value = 0.08006 which is greater than 0.05,The fisher's Exact test states that the odds of there being a relationship between the two beliefs, can be possible.  
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
